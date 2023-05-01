@@ -1,0 +1,19 @@
+{
+    "name": "birds-of-a-feather",
+    "version": "1.0.0",
+    "description": "Back end for social media plateform",
+    "main": "server.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node server",
+        "dev": "nodemon index",
+        "seed": "node utils/seed"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^7.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.9"
+    }
+}
