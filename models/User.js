@@ -5,10 +5,14 @@ const userSchema = new Schema(
     {
         username: {
             type: String,
-
+            unique: true,
+            require: true,
+            trim: true,
         },
         email: {
             type: String,
+            unique: true,
+            require: true,
         },
         thoughts: [
             {
@@ -41,6 +45,6 @@ userSchema
 
 
 // Initialize our User model
-const User = model('user', userSchema);
+const User = mongoose.model('user', userSchema);
 
 module.exports = User;

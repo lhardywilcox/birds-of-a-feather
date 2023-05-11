@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-// Schema to create User model
+// Schema to create Reaction model
 const reactionSchema = new Schema(
     {
         reactionId: {
@@ -18,8 +18,7 @@ const reactionSchema = new Schema(
         },
         createdAt: {
             type: Date,
-
-
+            default: Date.now,
         }
     },
     {
@@ -29,3 +28,7 @@ const reactionSchema = new Schema(
         id: false,
     }
 );
+
+const Reaction = mongoose.model('reaction', reactionSchema);
+
+module.exports = Reaction;
