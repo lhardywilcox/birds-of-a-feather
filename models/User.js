@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const Email = require('mongoose-type-mail');
 
 // Schema to create User model
 const userSchema = new Schema(
@@ -10,9 +11,9 @@ const userSchema = new Schema(
             trim: true,
         },
         email: {
-            type: String,
-            unique: true,
-            require: true,
+            type: Email,
+            unique: [true, 'An Email is required.'],
+            require: [true, 'This Email is already in use.'],
         },
         thoughts: [
             {
@@ -45,6 +46,6 @@ userSchema
 
 
 // Initialize our User model
-const User = mongoose.model('user', userSchema);
+const User = model('user', userSchema);
 
 module.exports = User;

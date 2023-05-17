@@ -11,7 +11,8 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "mongoose": "^7.0.2"
+        "mongoose": "^7.0.2",
+        "mongoose-type-mail": "^1.0.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.9"
