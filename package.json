@@ -1,7 +1,7 @@
 {
     "name": "birds-of-a-feather",
     "version": "1.0.0",
-    "description": "Back end for social media plateform",
+    "description": "Back end for social media platform",
     "main": "server.js",
     "license": "MIT",
     "scripts": {
