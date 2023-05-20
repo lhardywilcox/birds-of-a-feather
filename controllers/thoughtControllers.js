@@ -1,6 +1,6 @@
 const Thought = require('../models/Thought');
 const User = require('../models/User');
-
+// defines all the queries to be used within functions
 // /api/thoughts
 module.exports = {
     // GET all thoughts
