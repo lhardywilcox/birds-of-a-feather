@@ -1,6 +1,5 @@
 const User = require('../models/User');
-
-
+// defines all the queries to be used within functions
 //  /api/users
 module.exports = {
     // GET all users

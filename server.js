@@ -10,7 +10,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
-
+// starts the server on localhost:3001
 db.once('open', () => {
     app.listen(PORT, () => {
         console.log(`API server is running on port ${PORT}!`);

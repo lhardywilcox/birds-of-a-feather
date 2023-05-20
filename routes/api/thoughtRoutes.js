@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// defines which file contains the functions required by the router
 const {
     getThoughts,
     createThought,
@@ -8,7 +9,7 @@ const {
     addReaction,
     deleteReaction
 } = require("../../controllers/thoughtControllers");
-
+// tells the router which functions to use with each route
 // /api/thoughts
 router.route('/').get(getThoughts).post(createThought);
 
