@@ -28,3 +28,7 @@ const reactionSchema = new Schema(
         id: false,
     }
 );
+
+const Reaction = model('reaction', userSchema);
+
+module.exports = Reaction;

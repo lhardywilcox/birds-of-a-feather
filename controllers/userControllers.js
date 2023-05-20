@@ -30,8 +30,8 @@ module.exports = {
     // POST new user
     async createUser(req, res) {
         try {
-            const dbUserData = await User.create(req.body);
-            res.json(dbUserData);
+            const user = await User.create(req.body);
+            res.json(user);
         } catch (err) {
             res.status(500).json(err);
         }
@@ -72,6 +72,7 @@ module.exports = {
     //  /api/users/:userId/friends/:friendId
 
     // POST add new friend to user's friend list
+    // Throws 500 error
     async addFriend(req, res) {
         try {
             const user = await User.findOneAndUpdate(
