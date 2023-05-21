@@ -59,7 +59,7 @@ To create a reaction to a thought:
 
 Here is a Screencastify Video demonstrating the routes with Insomnia:
 
-![Birds of a Feather](https://watch.screencastify.com/v/UgzI3exnEBFRwj4mCBiK)
+[Birds of a Feather](https://watch.screencastify.com/v/UgzI3exnEBFRwj4mCBiK)
 
 
 ## Credits
